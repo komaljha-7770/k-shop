@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="product.css">
+    <!-- <script src="script.js"></script> -->
+</head>
+<body>
+     <header>
+        <div class="navbar">
+            <div class="nav-logo border">
+                <div class="logo"></div>
+            </div>  
+            <!-- <div class="nav-address border">
+               <h1> <p   class="add-first">K-Shop</p></h1>
+                <div class="add-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+
+                     <p class="add-sec">India</p> 
+                </div>
+            </div>   -->
+            <p class="logo-text">K-<span>Shop</span></p>
+             <div class="nav-search">.
+                <select class="search-select">
+                    <option>All</option>
+                </select>
+                <input placeholder="search K-Shop" class="search-input">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>  
+             </div>
+             <div class="nav-singin border">
+                <p><span>Hello,sign in</span></p>
+                <p class="nav-second">Account & Lists</p>
+             </div>  
+             <div class="nav-return border">
+                <p><span>Returns</span></p>
+                <p class="nav-second">& orders</p>
+             </div> 
+             <div class="nav-cart border">
+                <i class="fa-solid fa-cart-shopping"></i>
+               <a  href="card.html" > cart</a>
+             </div>
+        </div>
+        <!-- <div class="products"> Our Products</div> -->
+        <section class="product-title">
+    <h1>Our Products</h1>
+    <p>Browse products by category</p>
+</section>
+<div class="filter-buttons">
+
+<!-- <button onclick="filterProduct('All')">All</button>
+<button onclick="filterProduct('Laptops')">Laptops</button>
+<button onclick="filterProduct('Mobiles')">Mobiles</button>
+<button onclick="filterProduct('Earbuds')">Earbuds</button>
+
+<button onclick="filterProduct('Headphones')">Headphones</button>
+<button onclick="filterProduct('Speakers')">Speakers</button>
+<button onclick="filterProduct('T.v')">T.V</button>
+<button onclick="filterProduct('Refridgerators')">Refridgerators</button>
+<button onclick="filterProduct('AC')">AC</button>
+<div class="filter-buttons"> -->
+<button data-filter="all">All</button>
+<button data-filter="laptop">Laptops</button>
+<button data-filter="mobile">Mobiles</button>
+<button data-filter="earbuds">Earbuds</button>
+<button data-filter="headphones">Headphones</button>
+<button data-filter="speakers">Speakers</button>
+<button data-filter="tv">TV</button>
+<button data-filter="refrigerator">Refrigerators</button>
+<button data-filter="ac">AC</button>
+</div>
+<div class="products  box">
+
+<div class="product-card  box" data-category="laptop">
+<img src="lap 1.jpeg">
+<h3>Dell 16</h3>
+<p class="price">77490</p>
+<button class="add-to-cart">Add to Cart</button>
+</div>
+
+<div class="product-card  box" data-category="laptop">
+<img src="lap 2.jpeg">
+<h3>HP 15s</h3>
+<p class="price">59990</p>
+<button class="add-to-cart">Add to Cart</button>
+</div>
+
+<div class="product-card  box" data-category="laptop">
+<img src="lap 3.jpeg">
+<h3>Lenovo Ideapad</h3>
+<p class="price">54990</p>
+<button class="add-to-cart">Add to Cart</button>
+</div>
+
+<div class="product-card box" data-category="laptop">
+<img src="lap 4.jpeg">
+<h3>Apple MacBook Neo 13</h3>
+<p class="price">69990</p>
+<button class="add-to-cart">Add to Cart</button>
+</div>
+
+<div class="product-card box" data-category="mobile">
+<img src="p 1.jpeg">
+<h3>Apple iPhone 16 Pro</h3>
+<p class="price">80900</p>
+<button class="add-to-cart">Add to Cart</button>
+</div>
+
+<div class="product-card box" data-category="mobile">
+<img src="p 2.jpeg">
+<h3>OnePlus 10T 5G</h3>
+<p class="price">35000</p>
+<button class="add-to-cart">Add to Cart</button>
+</div>
+
+<div class="product-card box" data-category="mobile">
+<img src="p 3.jpeg">
+<h3>OPPO K10</h3>
+<p class="price">19999</p>
+<button class="add-to-cart">Add to Cart</button>
+</div>
+
+<div class="product-card box" data-category="mobile">
+<img src="p 4.jpeg">
+<h3>Xiaomi 11T</h3>
+<p class="price">16399</p>
+<button class="add-to-cart">Add to Cart</button>
+</div>
+
+<div class="product-card box" data-category="headphones">
+<img src="h 1.jpeg">
+<h3>Bose Headphones</h3>
+<p class="price">23999</p>
+<button class="add-to-cart">Add to Cart</button>
+</div>
+
+<div class="product-card box" data-category="headphones">
+<img src="h 2.jpeg">
+<h3>boAt Rockerz 512</h3>
+<p class="price">2499</p>
+<button class="add-to-cart">Add to Cart</button>
+</div>
+
+<div class="product-card box" data-category="headphones">
+<img src="h 3.jpeg">
+<h3>JBL Tune 770NC</h3>
+<p class="price">4999</p>
+<button class="add-to-cart">Add to Cart</button>
+</div>
+
+<div class="product-card box" data-category="headphones">
+<img src="h 4.jpeg">
+<h3>Apple AirPods</h3>
+<p class="price">67999</p>
+<button class="add-to-cart">Add to Cart</button>
+</div>
+
+<div class="product-card box" data-category="earbuds">
+<img src="e 1.jpeg">
+<h3>Nothing Ear</h3>
+<p class="price">11999</p>
+<button class="add-to-cart">Add to Cart</button>
+</div>
+
+<div class="product-card box" data-category="earbuds">
+<img src="e 2.jpeg">
+<h3>boAt Airdopes</h3>
+<p class="price">1499</p>
+<button class="add-to-cart">Add to Cart</button>
+</div>
+
+<div class="product-card box" data-category="earbuds">
+<img src="e 3.jpeg">
+<h3>OnePlus Nord Buds</h3>
+<p class="price">2499</p>
+<button class="add-to-cart">Add to Cart</button>
+</div>
+
+<div class="product-card box" data-category="earbuds">
+<img src="e 4.jpeg">
+<h3>CMF Buds</h3>
+<p class="price">1999</p>
+<button class="add-to-cart">Add to Cart</button>
+</div>
+
+<div class="product-card box" data-category="speakers">
+<img src="speak 1.jpeg">
+<h3>Sony SRS-XV900</h3>
+<p class="price">54900</p>
+<button class="add-to-cart">Add to Cart</button>
+</div>
+
+<div class="product-card box" data-category="speakers">
+<img src="spaek 2.jpeg">
+<h3>boAt Stone 1500</h3>
+<p class="price">6900</p>
+<button class="add-to-cart">Add to Cart</button>
+</div>
+
+<div class="product-card box" data-category="speakers">
+<img src="speak 3.jpeg">
+<h3>JBL FLIP 3</h3>
+<p class="price">4999</p>
+<button class="add-to-cart">Add to Cart</button>
+</div>
+
+<div class="product-card box" data-category="speakers">
+<img src="speak 4.jpeg">
+<h3>Bose Soundlink Max</h3>
+<p class="price">41999</p>
+<button class="add-to-cart">Add to Cart</button>
+</div>
+
+<div class="product-card box" data-category="ac">
+<img src="ac1.jpeg">
+<h3>a</h3>
+<p class="price">45000</p>
+<button class="add-to-cart">Add to Cart</button>
+</div>
+
+<div class="product-card box" data-category="ac">
+<img src="ac2.jpeg">
+<h3>Mobile</h3>
+<p class="price">15000</p>
+<button class="add-to-cart">Add to Cart</button>
+</div>
+
+<div class="product-card box" data-category="ac">
+<img src="ac3.jpeg">
+<h3>Shirt</h3>
+<p class="price">999</p>
+<button class="add-to-cart">Add to Cart</button>
+</div>
+
+<div class="product-card box" data-category="ac">
+<img src="ac4.jpeg">
+<h3>Lipstick</h3>
+<p class="price">499</p>
+<button class="add-to-cart">Add to Cart</button>
+</div>
+
+<div class="product-card box" data-category="tv">
+<img src="tv1.jpeg">
+<h3>Lipstick</h3>
+<p class="price">499</p>
+<button class="add-to-cart">Add to Cart</button>
+</div>
+
+<div class="product-card box" data-category="tv">
+<img src="tv2.jpeg">
+<h3>Lipstick</h3>
+<p class="price">499</p>
+<button class="add-to-cart">Add to Cart</button>
+</div>
+
+<div class="product-card box" data-category="tv">
+<img src="tv3.jpeg">
+<h3>Lipstick</h3>
+<p class="price">499</p>
+<button class="add-to-cart">Add to Cart</button>
+</div>
+
+<div class="product-card box" data-category="tv">
+<img src="tv4.jpeg">
+<h3>Lipstick</h3>
+<p class="price">499</p>
+<button class="add-to-cart">Add to Cart</button>
+</div>
+
+<div class="product-card box" data-category="refrigerator">
+<img src="e 1.jpeg">
+<h3>Lipstick</h3>
+<p class="price">499</p>
+<button class="add-to-cart">Add to Cart</button>
+</div>
+
+<div class="product-card box" data-category="refrigerator">
+<img src="e 2.jpeg">
+<h3>Lipstick</h3>
+<p class="price">499</p>
+<button class="add-to-cart">Add to Cart</button>
+</div>
+
+<div class="product-card box" data-category="refrigerator">
+<img src="e 3.jpeg">
+<h3>Lipstick</h3>
+<p class="price">499</p>
+<button class="add-to-cart">Add to Cart</button>
+</div>
+
+<div class="product-card box" data-category="refrigerator">
+<img src="e 4.jpeg">
+<h3>Lipstick</h3>
+<p class="price">499</p>
+<button class="add-to-cart">Add to Cart</button>
+</div>
+
+<!-- <div class="filter-buttons">
+<button data-filter="all">All</button>
+<button data-filter="laptop">Laptops</button>
+<button data-filter="mobile">Mobiles</button>
+<button data-filter="earbuds">Earbuds</button>
+<button data-filter="headphones">Headphones</button>
+<button data-filter="speakers">Speakers</button>
+<button data-filter="tv">TV</button>
+<button data-filter="refrigerator">Refrigerators</button>
+<button data-filter="ac">AC</button>
+</div> -->
+</div>
+<footer>
+<div class="foot-panel1">
+           <a href="home page.html"> Back</a>
+        </div>
+   <div class="foot-panel2">
+            <ul>
+                <p>Get to know</p>
+                <a>Careers</a>
+                <a>Blog</a>
+                <a>About K Shop</a>
+                <a>Investor Relations</a>
+                <a>K Shop Devices</a>
+                <a>k Shop Science</a>
+
+            </ul>
+            <ul>
+                <p>Get to know</p>
+                <a>Careers</a>
+                <a>Blog</a>
+                <a>About K Shop</a>
+                <a>Investor Relations</a>
+                <a>K Shop Devices</a>
+                <a>K Shop Science</a>
+
+            </ul>
+            <ul>
+                <p>Get to know</p>
+                <a>Careers</a>
+                <a>Blog</a>
+                <a>About K Shop</a>
+                <a>Investor Relations</a>
+                <a>K Shop Devices</a>
+                <a>K Shop Science</a>
+
+            </ul>
+             <ul>
+                <p>Get to know</p>
+                <a>Careers</a>
+                <a>Blog</a>
+                <a>About K Shop</a>
+                <a>Investor Relations</a>
+                <a>K Shop Devices</a>
+                <a>K Shop Science</a>
+
+            </ul>
+        </div>
+    <div class="foot-panel3">
+            <div class="logo"></div>
+        </div>
+        <div class="foot-panel4">
+            <div class="pages">
+                <a>Conditions of use</a>
+                <a>Privacy notice</a>
+                <a>Your ads privacy choices</a>
+            </div>
+            <div class="copyright">
+                @ 1996-2023, K Shop.com,Inc. or its affiliates
+            </div>
+        </div>
+    </footer>
+ <script src="script.js"></script>
+</body>
+</html>
