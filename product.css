@@ -3,6 +3,10 @@
     margin: 0;
     font-family: Arial;
     border: border-box;
+
+}
+body{
+    background-color: #f9d7f3;
 }
 .navbar{
     height: 60px;
@@ -119,21 +123,33 @@ span{
 } */
 .product-title{
     text-align:center;
-    padding:40px 0;
+    padding:60px 0;
      background-color: (#f7f8fc);
      margin-bottom: 20px;
-    background-image: url("pro\ cover.jpeg");
+    background-image: url("our\ pro.jpeg");
     background-size: cover;
     background-position: center;
     position: relative;
     height: 200px;
+    width: 100%;
+    margin-top: 5px;
     
+}
+.product-title::before{
+    content:"" ;
+    position: absolute;
+    top: 0;;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
 }
 
 .product-title h1{
     font-size:50px;
     margin:0;
     color:#e51cba;
+    position: relative;
 }
 
 
@@ -141,6 +157,7 @@ span{
     margin-top:8px;
     color:#ed6bd7;
     font-size:20px;
+    position: relative;
 }
 .filter-buttons{
 text-align:center;
@@ -178,7 +195,7 @@ border-radius:10px;
 box-shadow:0 0 10px rgba(0,0,0,0.1);
 padding:10px;
 text-align:center;
-background:rgb(234, 165, 228);
+background:rgb(253, 138, 243);
 }
 .product-card:hover{
     transform: translateY(-5px);

@@ -4,18 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="card.css">
 
 </head>
 <body>
-    <h2>Your Cart</h2>
+<header>
+        <div class="navbar">
+            <div class="nav-logo border">
+                <div class="logo"></div>
+            </div>  
+            <!-- <div class="nav-address border">
+               <h1> <p   class="add-first">K-Shop</p></h1>
+                <div class="add-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+
+                     <p class="add-sec">India</p> 
+                </div>
+            </div>   -->
+            <p class="logo-text">K-<span>Shop</span></p>
+             <div class="nav-search">.
+                <select class="search-select">
+                    <option>All</option>
+                </select>
+                <input placeholder="search K-Shop" class="search-input">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>  
+             </div>
+             <div class="nav-singin border">
+                <p><span>Hello,sign in</span></p>
+                <p class="nav-second">Account & Lists</p>
+             </div>  
+             <div class="nav-return border">
+                <p><span>Returns</span></p>
+                <p class="nav-second">& orders</p>
+             </div> 
+             <div class="nav-cart border">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <a href="card.html">Cart</a>
+             </div>
+        </div>
+
+
+
+    <h1 class="you" text align="center" >Your Cart</h1>
 
 <div id="cart-items"></div>
 
-<h3>Total: ₹<span id="total">0</span></h3>
+<h1 class="to" text align="center" >Total: ₹<span id="total">0</span></h1>
+<button class ="checkout-btn"> checkout</button>
 <script src="card.js"></script>
 </body>
-<!-- </html><h2>Your Cart</h2>
-
-<div id="cart-items"></div>
-
-<h3>Total: ₹<span id="total"></span></h3> -->
