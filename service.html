@@ -1,0 +1,126 @@
+<html>
+<head>
+    <title>K-Shop | Customer Service</title>
+    <style>
+        /* Pink & Blue Mix Theme */
+        body {
+            background: linear-gradient(135deg, #e51cba, #4facfe);
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .service-container {
+            background: rgba(255, 255, 255, 0.95);
+            width: 100%;
+            max-width: 600px;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        h2 { color: #333; margin-bottom: 10px; }
+        h2 span { color: #e51cba; }
+        
+        .contact-info {
+            display: flex;
+            justify-content: space-around;
+            margin: 30px 0;
+            font-size: 14px;
+        }
+
+        .info-box {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            width: 45%;
+            background: #f7f8fc;
+        }
+
+        /* Form Styling */
+        .form-group {
+            text-align: left;
+            margin-bottom: 15px;
+        }
+
+        label { font-weight: bold; color: #555; display: block; margin-bottom: 5px; }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            outline: none;
+            background: #fff;
+        }
+
+        textarea { height: 100px; resize: none; }
+
+        .send-btn {
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(to right, #e51cba, #4facfe);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .send-btn:hover {
+            opacity: 0.9;
+            transform: scale(1.02);
+        }
+
+        .back-link {
+            display: block;
+            margin-top: 20px;
+            color: #4facfe;
+            text-decoration: none;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="service-container">
+    <h2>Customer <span>Service</span></h2>
+    <p>Hum aapki madad ke liye hamesha taiyaar hain!</p>
+
+    <div class="contact-info">
+        <div class="info-box">
+            <strong>Email Us</strong><br>
+            support@kshop.com
+        </div>
+        <div class="info-box">
+            <strong>Call Us</strong><br>
+            +91 98765 43210
+        </div>
+    </div>
+
+    <form onsubmit="alert('Message sent! We will contact you soon.'); return false;">
+        <div class="form-group">
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+            <label>How can we help?</label>
+            <textarea placeholder="Write your message here..."></textarea>
+        </div>
+        <button type="submit" class="send-btn">Send Message</button>
+    </form>
+
+    <a href="home.html" class="back-link">← Back to Shopping</a>
+</div>
+
+</body>
+</html>

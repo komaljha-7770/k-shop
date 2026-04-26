@@ -1,0 +1,96 @@
+<html>
+<head>
+    <title>K-Shop | Gift Cards</title>
+    <style>
+        body {
+            background: #f7f8fc;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 { color: #333; margin-top: 30px; }
+        h1 span { color: #e51cba; }
+        p { color: #666; margin-bottom: 40px; }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        /* Gift Card Design */
+        .gift-card {
+            background: linear-gradient(135deg, #e51cba, #8e2de2);
+            width: 280px;
+            height: 170px;
+            border-radius: 15px;
+            padding: 20px;
+            color: white;
+            position: relative;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+            transition: 0.3s;
+            cursor: pointer;
+            overflow: hidden;
+        }
+
+        .gift-card:hover { transform: translateY(-10px); }
+
+        .gift-card h3 { margin: 0; font-size: 20px; letter-spacing: 1px; }
+        .gift-card .amount { font-size: 28px; font-weight: bold; margin-top: 20px; }
+        .gift-card .logo { position: absolute; bottom: 20px; right: 20px; opacity: 0.8; font-weight: bold; }
+
+        /* Alag-alag colors ke liye classes */
+        .gold { background: linear-gradient(135deg, #f1c40f, #f39c12); }
+        .silver { background: linear-gradient(135deg, #bdc3c7, #2c3e50); }
+
+        .buy-btn {
+            margin-top: 15px;
+            padding: 8px 20px;
+            background: white;
+            color: #333;
+            border: none;
+            border-radius: 20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>K-Shop <span>Gift Cards</span></h1>
+    <p>Apno ko dein shopping ki azadi! Select a card to gift.</p>
+
+    <div class="container">
+        <div class="gift-card">
+            <h3>Birthday Special</h3>
+            <div class="amount">₹1,000</div>
+            <div class="logo">K-Shop</div>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+
+        <div class="gift-card gold">
+            <h3>Premium Gold</h3>
+            <div class="amount">₹5,000</div>
+            <div class="logo">K-Shop</div>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+
+        <div class="gift-card silver">
+            <h3>Silver Classic</h3>
+            <div class="amount">₹2,500</div>
+            <div class="logo">K-Shop</div>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+    </div>
+
+    <div style="margin-top: 50px;">
+        <a href="home.html" style="color: #e51cba; text-decoration: none; font-weight: bold;">← Back to Shop</a>
+    </div>
+
+</body>
+</html>

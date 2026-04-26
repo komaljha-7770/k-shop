@@ -1,0 +1,91 @@
+<html>
+<head>
+    <title>K-Shop | Register</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #e51cba, #f7f8fc);
+            font-family: 'Arial', sans-serif;
+            display: flex; justify-content: center; align-items: center;
+            height: 100vh; margin: 0;
+        }
+        .container {
+            background: white; padding: 30px; border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1); width: 360px;
+        }
+        h2 { text-align: center; color: #333; }
+        h2 span { color: #e51cba; }
+        .input-group { margin-bottom: 12px; }
+        label { font-size: 14px; font-weight: bold; color: #555; display: block; margin-bottom: 5px; }
+        input { width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 8px; outline: none; }
+        input:focus { border-color: #e51cba; }
+        .btn {
+            width: 100%; padding: 12px; background: #e51cba; color: white;
+            border: none; border-radius: 8px; font-weight: bold; cursor: pointer; margin-top: 10px;
+        }
+        .link { text-align: center; margin-top: 15px; font-size: 14px; }
+        .link a { color: #e51cba; text-decoration: none; font-weight: bold; }
+        .logo{
+            background-image: url(kshop.jpeg);
+            background-size: cover;
+            background-position: ;
+            height: 50px;
+            width: 100%;
+            opacity: 0.2;
+        }
+        .btn:hover{
+            transform: translateY(-3px);
+            box-shadow:0 5px 15px rgba(299, 28, 186, 0.4);
+            transition: 0.3s;
+        }
+    </style>
+    <script>
+    function check() {
+        var name = frm.nm1.value;
+        var pass = frm.nm2.value;
+        var repass = frm.nm3.value;
+        var age = frm.nm4.value;
+        var email = frm.nm5.value;
+        var contact = frm.nm6.value;
+
+        if(name=="" || pass=="" || repass=="" || age=="" || email=="" || contact=="") {
+            alert("Sari fields bharna zaroori hai!");
+            return false;
+        }
+        if(pass != repass) {
+            alert("PASSWORD MATCH NAHI HUA!");
+            return false;
+        }
+        if(pass.length < 6) {
+            alert("Password kam se kam 6 character ka ho.");
+            return false;
+        }
+        if(age < 18) {
+            alert("Age 18+ honi chahiye.");
+            return false;
+        }
+        if(contact.length != 10) {
+            alert("Sahi 10-digit mobile number daalein.");
+            return false;
+        }
+        alert("Registration Successful!");
+        return true;
+    }
+    </script>
+</head>
+<body>
+<div class="container">
+    <form name="frm" action="register.html" onsubmit="return check();">
+        <div class="logo"><img src="logo kshop.jpeg"></div>
+        <h2> Register for<span>K-Shop</span></h2>
+        <div class="input-group"><label>Name</label><input type="text" name="nm1"></div>
+        <div class="input-group"><label>Email</label><input type="email" name="nm5"></div>
+        <div class="input-group"><label>Contact</label><input type="text" name="nm6"></div>
+        <div class="input-group"><label>Password</label><input type="password" name="nm2"></div>
+        <div class="input-group"><label>Confirm Password</label><input type="password" name="nm3"></div>
+        <div class="input-group"><label>Age</label><input type="text" name="nm4"></div>
+        <input type="submit" value="Sign Up" class="btn">
+        <div class="link">Pehle se account hai? <a href="login.html">Login karein</a></div>
+    </form>
+</div>
+</body>
+</html>

@@ -121,10 +121,17 @@ span{
 .panel-ops p{
     display: inline;
     margin-left: 15px;
+
+}
+.nav links a{
+   margin: 0 15 px;
+   text-decoration: none;
+   padding: 5px 10px ;
 }
 .panel-ops{
     width: 70%;
     font-size: 0.85rem;
+    
 
 }
 .penel-deals{

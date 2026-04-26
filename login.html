@@ -1,0 +1,52 @@
+<html>
+<head>
+    <title>K-Shop | Login</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #e51cba, #f7f8fc);
+            font-family: 'Arial', sans-serif;
+            display: flex; justify-content: center; align-items: center;
+            height: 100vh; margin: 0;
+        }
+        .container {
+            background: white; padding: 40px; border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1); width: 340px;
+        }
+        h2 { text-align: center; color: #333; }
+        h2 span { color: #e51cba; }
+        input { width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ddd; border-radius: 8px; outline: none; }
+        input:focus { border-color: #e51cba; }
+        .btn {
+            width: 100%; padding: 12px; background: #e51cba; color: white;
+            border: none; border-radius: 8px; font-weight: bold; cursor: pointer;
+        }
+        .link { text-align: center; margin-top: 15px; font-size: 14px; }
+        .link a { color: #e51cba; text-decoration: none; font-weight: bold; }
+        .logo{
+            background-image: url(kshop.jpeg);
+            background-size: cover;
+            background-position: ;
+            height: 50px;
+            width: 100%;
+            opacity: 0.15;
+        }
+        .btn:hover{
+            transform: translateY(-3px);
+            box-shadow:0 5px 15px rgba(299, 28, 186, 0.4);
+            transition: 0.3s;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <form action="home.html">
+        <div class="logo"><img src="logo kshop.jpeg"></div>
+        <h2>Login to <span>K-Shop</span></h2>
+        <input type="email" placeholder="Email Address" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit" class="btn">Login</button>
+        <div class="link">Account nahi hai? <a href="register.html">Naya banayein</a></div>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<html>
+<head>
+    <title>K-Shop | Become a Seller</title>
+    <style>
+        /* Pink & Blue Professional Theme */
+        body {
+            background: linear-gradient(135deg, #4facfe 0%, #e51cba 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 50px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .sell-container {
+            background: rgba(255, 255, 255, 0.98);
+            width: 100%;
+            max-width: 700px;
+            padding: 40px;
+            border-radius: 25px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+
+        .header-section {
+            margin-bottom: 30px;
+        }
+
+        h1 { color: #333; font-size: 28px; }
+        h1 span { color: #e51cba; }
+        p { color: #666; font-size: 15px; }
+
+        /* Form Design */
+        .sell-form {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Do columns banaye hain */
+            gap: 20px;
+            text-align: left;
+        }
+
+        .full-width {
+            grid-column: span 2;
+        }
+
+        label {
+            font-weight: 600;
+            color: #444;
+            display: block;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #f0f0f0;
+            border-radius: 10px;
+            outline: none;
+            transition: 0.3s;
+            background: #fdfdfd;
+        }
+
+        input:focus {
+            border-color: #4facfe;
+            background: #fff;
+        }
+
+        .upload-box {
+            border: 2px dashed #4facfe;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            background: #f0f9ff;
+            cursor: pointer;
+        }
+
+        .submit-btn {
+            grid-column: span 2;
+            padding: 15px;
+            background: linear-gradient(to right, #4facfe, #e51cba);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+            box-shadow: 0 10px 20px rgba(229, 28, 186, 0.3);
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 25px rgba(229, 28, 186, 0.4);
+        }
+
+        .back-home {
+            display: block;
+            margin-top: 25px;
+            color: #4facfe;
+            text-decoration: none;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+<div class="sell-container">
+    <div class="header-section">
+        <h1>Sell on <span>K-Shop</span></h1>
+        <p>Apna business hamare saath shuru karein. Details bhariye aur bechna shuru karein!</p>
+    </div>
+
+    <form class="sell-form" onsubmit="alert('Application Submitted! K-Shop team will review your products.'); return false;">
+        <div class="input-group">
+            <label>Product Name</label>
+            <input type="text" placeholder="e.g. Silk Saree" required>
+        </div>
+
+        <div class="input-group">
+            <label>Category</label>
+            <select>
+                <option>Fashion</option>
+                <option>Electronics</option>
+                <option>Home Decor</option>
+                <option>Gifts</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label>Price (₹)</label>
+            <input type="number" placeholder="Set your price" required>
+        </div>
+
+        <div class="input-group">
+            <label>Stock Quantity</label>
+            <input type="number" placeholder="How many items?" required>
+        </div>
+
+        <div class="input-group full-width">
+            <label>Product Description</label>
+            <textarea rows="3" placeholder="Tell us about your product..."></textarea>
+        </div>
+
+        <div class="input-group full-width">
+            <label>Upload Product Photo</label>
+            <div class="upload-box">
+                <span>Click to upload image</span>
+                <input type="file" style="display: none;" id="fileInput">
+            </div>
+        </div>
+
+        <button type="submit" class="submit-btn">List My Product</button>
+    </form>
+
+    <a href="home.html" class="back-home">← Back to Shopping</a>
+</div>
+
+</body>
+</html>
+Sell page
