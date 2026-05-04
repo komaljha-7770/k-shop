@@ -105,4 +105,15 @@ document.querySelector(".checkout-btn").addEventListener("click", () => {
 // Initial call
 renderCart();
 
+//cart search
 
+
+function handleCartSearch(event) {
+    if (event.key === "Enter") {
+        let query = document.getElementById('cart-page-search').value;
+        if (query !== "") {
+            // User ko wapas Product Page par bhej do search results ke saath
+            window.location.href = "product.html?search=" + encodeURIComponent(query);
+        }
+    }
+}

@@ -133,6 +133,7 @@ span{
     height: 200px;
     width: 100%;
     margin-top: 5px;
+    border: 4px rgb(253, 138, 243) solid;
     
 }
 .product-title::before{

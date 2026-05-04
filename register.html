@@ -7,6 +7,7 @@
             font-family: 'Arial', sans-serif;
             display: flex; justify-content: center; align-items: center;
             height: 100vh; margin: 0;
+            
         }
         .container {
             background: white; padding: 30px; border-radius: 15px;
@@ -27,16 +28,25 @@
         .logo{
             background-image: url(kshop.jpeg);
             background-size: cover;
-            background-position: ;
-            height: 50px;
-            width: 100%;
+            background-repeat: no-repeat;
+            background-position:right ;
+            /* height: 400px;
+            width: 400px; */
             opacity: 0.2;
+            pointer-events: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 80%;
+            height: 80%;
+            z-index: -1;
         }
         .btn:hover{
             transform: translateY(-3px);
             box-shadow:0 5px 15px rgba(299, 28, 186, 0.4);
             transition: 0.3s;
-        }
+        } 
     </style>
     <script>
     function check() {
@@ -48,23 +58,23 @@
         var contact = frm.nm6.value;
 
         if(name=="" || pass=="" || repass=="" || age=="" || email=="" || contact=="") {
-            alert("Sari fields bharna zaroori hai!");
+            alert("All fields are mandatory!");
             return false;
         }
         if(pass != repass) {
-            alert("PASSWORD MATCH NAHI HUA!");
+            alert("PASSWORD NOT MATCHED!");
             return false;
         }
         if(pass.length < 6) {
-            alert("Password kam se kam 6 character ka ho.");
+            alert("Password must be atleast  6 character .");
             return false;
         }
         if(age < 18) {
-            alert("Age 18+ honi chahiye.");
+            alert("Age 18+ required.");
             return false;
         }
         if(contact.length != 10) {
-            alert("Sahi 10-digit mobile number daalein.");
+            alert("Please enter valid 10-digit mobile number .");
             return false;
         }
         alert("Registration Successful!");
@@ -75,8 +85,8 @@
 <body>
 <div class="container">
     <form name="frm" action="register.html" onsubmit="return check();">
-        <div class="logo"><img src="logo kshop.jpeg"></div>
-        <h2> Register for<span>K-Shop</span></h2>
+         <div class="logo"><img src="logo kshop.jpeg"></div> 
+        <h2> Register for  <span>K-Shop</span></h2>
         <div class="input-group"><label>Name</label><input type="text" name="nm1"></div>
         <div class="input-group"><label>Email</label><input type="email" name="nm5"></div>
         <div class="input-group"><label>Contact</label><input type="text" name="nm6"></div>
@@ -84,7 +94,7 @@
         <div class="input-group"><label>Confirm Password</label><input type="password" name="nm3"></div>
         <div class="input-group"><label>Age</label><input type="text" name="nm4"></div>
         <input type="submit" value="Sign Up" class="btn">
-        <div class="link">Pehle se account hai? <a href="login.html">Login karein</a></div>
+        <div class="link">Already registered ? <a href="login.html">Login</a></div>
     </form>
 </div>
 </body>

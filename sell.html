@@ -4,12 +4,16 @@
     <style>
         /* Pink & Blue Professional Theme */
         body {
-            background: linear-gradient(135deg, #4facfe 0%, #e51cba 100%);
+            background: linear-gradient(135deg, #64b6fe 0%, #f04fcd 100%);
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 50px 20px;
             display: flex;
             justify-content: center;
+        }
+        form {
+              max-width: 100%;
+             overflow: hidden;
         }
 
         .sell-container {
@@ -65,14 +69,21 @@
             background: #fff;
         }
 
-        .upload-box {
-            border: 2px dashed #4facfe;
-            padding: 20px;
+         .upload-area {
+            width: 100%;
+            max-width: 400px;
+            margin:0px auto;
+            overflow: hidden;
+            border: 2px dashed #0c84ed;
+            padding: 15px;
+            box-sizing: border-box;
             text-align: center;
             border-radius: 10px;
             background: #f0f9ff;
             cursor: pointer;
-        }
+            
+        } 
+         
 
         .submit-btn {
             grid-column: span 2;
@@ -96,10 +107,36 @@
         .back-home {
             display: block;
             margin-top: 25px;
-            color: #4facfe;
+            color: #0c1924;
             text-decoration: none;
             font-weight: 600;
         }
+        .upload-area {
+            width: 100%;
+            max-width: 250px;
+            height: 100px;
+            border: 2px dashed #0c84ed;
+            border-radius: 10px;
+            background: #f0f9ff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            cursor: pointer;
+}
+
+        #preview {
+             max-width: 100%;
+             max-height: 100%;
+             display: none;
+            width: 200px;
+            height: 200px;
+}
+        .full-width {
+           grid-column: span 2;
+}
+         
+          
     </style>
 </head>
 <body>
@@ -107,22 +144,25 @@
 <div class="sell-container">
     <div class="header-section">
         <h1>Sell on <span>K-Shop</span></h1>
-        <p>Apna business hamare saath shuru karein. Details bhariye aur bechna shuru karein!</p>
+        <p>Start your business with us,fill in the details, and start selling!</p>
     </div>
 
-    <form class="sell-form" onsubmit="alert('Application Submitted! K-Shop team will review your products.'); return false;">
+    <form class="sell-form" overflow:auto; onsubmit="alert('Application Submitted! K-Shop team will review your products.'); return false;">
         <div class="input-group">
             <label>Product Name</label>
-            <input type="text" placeholder="e.g. Silk Saree" required>
+            <input type="text" placeholder="e.g. Laptops" required>
         </div>
 
         <div class="input-group">
             <label>Category</label>
             <select>
-                <option>Fashion</option>
-                <option>Electronics</option>
-                <option>Home Decor</option>
-                <option>Gifts</option>
+                <option>Television</option>
+                <option>Mobile Phones</option>
+                <option>Speakers</option>
+                <option>Ear Buds</option>
+                <option>Headphones</option>
+                <option>Air Conditoners </option>
+                <option>Refrigerators</option>
             </select>
         </div>
 
@@ -143,18 +183,29 @@
 
         <div class="input-group full-width">
             <label>Upload Product Photo</label>
-            <div class="upload-box">
+            <!-- <div class="upload-box">
                 <span>Click to upload image</span>
                 <input type="file" style="display: none;" id="fileInput">
-            </div>
-        </div>
+            </div> -->
+            <div class="input-group full-width">
+  
+
+  <div class="upload-area" onclick="document.getElementById('fileInput').click()">
+    <input type="file" id="fileInput" accept="image/*" onchange="previewImage(event)" hidden>
+
+    <p id="upload-text">Click to upload image</p>
+    <img id="preview" src="">
+  </div>
+</div>
+        </div> 
+       
+
 
         <button type="submit" class="submit-btn">List My Product</button>
     </form>
 
     <a href="home.html" class="back-home">← Back to Shopping</a>
 </div>
-
+<script src="sell.js"></script>
 </body>
 </html>
-Sell page

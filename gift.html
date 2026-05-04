@@ -1,9 +1,15 @@
 <html>
 <head>
     <title>K-Shop | Gift Cards</title>
+    <script>
+        function confirmorder(){
+            alert("Yay! apka gift order ho chuka hai.")
+        }
+    </script>
     <style>
         body {
             background: #f7f8fc;
+            background-color: #fff5f8;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 20px;
@@ -38,7 +44,9 @@
             overflow: hidden;
         }
 
-        .gift-card:hover { transform: translateY(-10px); }
+        .gift-card:hover { transform: translateY(-10px); 
+            box-shadow: 0 6px 20px rgba(233, 30,99,0.5);
+        }
 
         .gift-card h3 { margin: 0; font-size: 20px; letter-spacing: 1px; }
         .gift-card .amount { font-size: 28px; font-weight: bold; margin-top: 20px; }
@@ -49,6 +57,7 @@
         .silver { background: linear-gradient(135deg, #bdc3c7, #2c3e50); }
 
         .buy-btn {
+            box-shadow: 0 4px rgba(21, 21, 20, 0.3);
             margin-top: 15px;
             padding: 8px 20px;
             background: white;
@@ -57,6 +66,7 @@
             border-radius: 20px;
             font-weight: bold;
             cursor: pointer;
+            transition: all 0.3s ease;
         }
     </style>
 </head>
@@ -70,21 +80,21 @@
             <h3>Birthday Special</h3>
             <div class="amount">₹1,000</div>
             <div class="logo">K-Shop</div>
-            <button class="buy-btn">Buy Now</button>
+            <button class="buy-btn" onclick="confirmorder()" >Buy Now</button>
         </div>
 
         <div class="gift-card gold">
             <h3>Premium Gold</h3>
             <div class="amount">₹5,000</div>
             <div class="logo">K-Shop</div>
-            <button class="buy-btn">Buy Now</button>
+            <button class="buy-btn" onclick="confirmorder()" >Buy Now</button>
         </div>
 
         <div class="gift-card silver">
             <h3>Silver Classic</h3>
             <div class="amount">₹2,500</div>
             <div class="logo">K-Shop</div>
-            <button class="buy-btn">Buy Now</button>
+            <button class="buy-btn" onclick="confirmorder()">Buy Now</button>
         </div>
     </div>
 

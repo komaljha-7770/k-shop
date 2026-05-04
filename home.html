@@ -25,12 +25,13 @@
                      <p class="add-sec">India</p> 
                 </div>
             </div>   -->
-            <p class="logo-text">K-<span>Shop</span></p>
+            <p class="logo-text  border">K-<span>Shop</span></p>
              <div class="nav-search">.
                 <select class="search-select">
                     <option>All</option>
                 </select>
-                <input placeholder="search K-Shop" class="search-input">
+                <!-- <input placeholder="search K-Shop" class="search-input"> -->
+                <input type="text" id="home-search" onkeypress="handleHomeSearch(event)" placeholder="search K-Shop" class="search-input">
                 <div class="search-icon">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>  
@@ -45,7 +46,8 @@
              </div> 
              <div class="nav-cart border">
                 <i class="fa-solid fa-cart-shopping"></i>
-                <a href="card.html">Cart</a>
+                <a href="card.html" style="color: azure;">Cart</a>
+
              </div>
         </div>
 
@@ -54,12 +56,12 @@
                 <i class="fa-solid fa-bars"></i>
                 All
             </div>
-            <div class="panel-ops">
-                <a href="home.html">Todays Deals</a>
-                <a  href="service.html">Customer Service</a>
-                <a href="register.html">Register</a>
-                <a href="gift.html"> Cards</a>
-                 <a href="sell.html"> Sell</a>
+            <div class="panel-ops" >
+                <a href="home.html" style="color: azure;">Todays Deals</a>
+                <a  href="service.html" style="color: azure;">Customer Service</a>
+                <a href="register.html" style="color: azure;">Register</a>
+                <a href="gift.html" style="color: azure;"> Cards</a>
+                 <a href="sell.html" style="color: azure;"> Sell</a>
             </div>
             <div class="panel-deals">
                 shop deals in electronics
@@ -129,7 +131,7 @@
     </div>
     <footer>
         <div class="foot-panel1">
-           <a href="home.html"> Back to top</a>
+           <a href="home.html" style="color:rgb(220, 185, 252);"> Back to top</a>
         </div>
         <div class="foot-panel2">
             <ul>
@@ -188,7 +190,7 @@
         </div>
     </footer>
 
-
+<script src="main.js"></script>
 
 </body>
 </html>

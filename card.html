@@ -22,12 +22,13 @@
                      <p class="add-sec">India</p> 
                 </div>
             </div>   -->
-            <p class="logo-text">K-<span>Shop</span></p>
+            <p class="logo-text border">K-<span>Shop</span></p>
              <div class="nav-search">.
                 <select class="search-select">
                     <option>All</option>
                 </select>
-                <input placeholder="search K-Shop" class="search-input">
+                <!-- <input placeholder="search K-Shop" class="search-input"> -->
+                 <input type="text" id="cart-page-search" onkeypress="handleCartSearch(event)" placeholder="search K-Shop" class="search-input">
                 <div class="search-icon">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>  
@@ -42,7 +43,7 @@
              </div> 
              <div class="nav-cart border">
                 <i class="fa-solid fa-cart-shopping"></i>
-                <a href="card.html">Cart</a>
+                <a href="card.html" style="color: azure;">Cart</a>
              </div>
         </div>
 
@@ -53,6 +54,6 @@
 <div id="cart-items"></div>
 
 <h1 class="to" text align="center" >Total: ₹<span id="total">0</span></h1>
-<button class ="checkout-btn"> checkout</button>
+<button class ="checkout-btn">Place Order</button>
 <script src="card.js"></script>
 </body>

@@ -127,12 +127,13 @@ span{
    margin: 0 15 px;
    text-decoration: none;
    padding: 5px 10px ;
+   text-decoration: none;
 }
 .panel-ops{
     width: 70%;
     font-size: 0.85rem;
+    color: #e2e7e6;
     
-
 }
 .penel-deals{
     font-size: 0.9rem;

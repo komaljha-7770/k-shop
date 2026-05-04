@@ -17,10 +17,10 @@
     width: 100px;
 }
 .logo{
-    background-image: url("cart\ logo.jpeg");
-    background-size: cover;
+    background-image: url("kshop.jpeg");
+    background-size:contain;
     height: 50px;
-    width: 100%;
+    width: 50%;
 }
 .logo-text{
     font-size: 30px;
